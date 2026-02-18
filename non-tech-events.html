@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Tech Events - Mech Feast 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans antialiased min-h-screen">
+    <!-- Backgrounds -->
+    <div class="internal-pages-bg"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Navigation -->
+    <header
+        class="fixed w-full z-40 bg-opacity-90 bg-gray-900 backdrop-blur-md border-b border-gray-800 transition-all duration-300 transform"
+        id="navbar">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-600">
+                <i class="fas fa-cogs mr-2 animate-spin-slow"></i> MECHANO MMXXVI
+            </a>
+
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="nav-link hover:text-yellow-600 transition">Home</a>
+                <a href="workshops.html" class="nav-link hover:text-yellow-600 transition">Workshops</a>
+                <a href="tech-events.html" class="nav-link hover:text-yellow-600 transition">Tech Events</a>
+                <a href="non-tech-events.html" class="nav-link active text-yellow-600 transition">Non-Tech</a>
+                <a href="accommodations.html" class="nav-link hover:text-yellow-600 transition">Stay</a>
+                <a href="sponsors.html" class="nav-link hover:text-yellow-600 transition">Sponsors</a>
+                <a href="about.html" class="nav-link hover:text-yellow-600 transition">About</a>
+                <a href="contact.html"
+                    class="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-800 rounded text-white hover:shadow-lg transition">Contact</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none text-yellow-600">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 top-full shadow-xl">
+            <div class="px-4 py-2 flex flex-col space-y-2">
+                <a href="index.html" class="block py-2 hover:text-yellow-600">Home</a>
+                <a href="workshops.html" class="block py-2 hover:text-yellow-600">Workshops</a>
+                <a href="tech-events.html" class="block py-2 hover:text-yellow-600">Tech Events</a>
+                <a href="non-tech-events.html" class="block py-2 text-yellow-600 font-bold">Non-Tech Events</a>
+                <a href="accommodations.html" class="block py-2 hover:text-yellow-600">Accommodations</a>
+                <a href="sponsors.html" class="block py-2 hover:text-yellow-600">Sponsors</a>
+                <a href="about.html" class="block py-2 hover:text-yellow-600">About Us</a>
+                <a href="contact.html" class="block py-2 text-blue-400 font-bold">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-28 pb-20 container mx-auto px-4">
+        <h1
+            class="text-4xl md:text-6xl font-display font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-400">
+            CULTURAL ARENA
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Event 1: Gaming -->
+            <div
+                class="mech-card group relative p-6 bg-gray-800/80 rounded-lg overflow-hidden border-l-4 border-yellow-600 hover:border-green-500 transition-all duration-300">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-white opacity-5 group-hover:opacity-10 transition-opacity">
+                    <i class="fas fa-gavel"></i>
+
+                </div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-display font-bold text-yellow-500 mb-2 group-hover:text-green-400 transition-colors">
+                        CRICKET AUCTION</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4 space-x-4">
+                        
+                        <span><i class="fas fa-users mr-1"></i> Squad/Solo</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 h-20 overflow-hidden">
+                        Teams bid for players within a fixed purse during the auction. The team with the highest cumulative players rating at the end wins the contest.
+                    </p>
+                    <div class="flex justify-between items-center border-t border-gray-700 pt-4">
+                        <span class="font-bold text-green-400"><i class="fas fa-trophy mr-1"></i> ₹500</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdt6D9yzsDgG6TdzC59LTEm8IyXE877JYnQ406uz8nw48_ayA/viewform?usp=publish-editor"
+                            class="px-4 py-2 bg-blue-600 hover:bg-black text-white rounded text-sm font-bold uppercase tracking-wider transition">Register</a>
+                    </div> <h5 class="font-bold text-green-400">Registration fee:₹50</h5>
+                </div>
+            </div>
+
+            <!-- Event 2: Photography -->
+            <div
+                class="mech-card group relative p-6 bg-gray-800/80 rounded-lg overflow-hidden border-l-4 border-yellow-600 hover:border-green-500 transition-all duration-300">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-white opacity-5 group-hover:opacity-10 transition-opacity">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-display font-bold text-yellow-500 mb-2 group-hover:text-green-400 transition-colors">
+                        Click Clash</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4 space-x-4">
+                        <span><i class="far fa-calendar-alt mr-1"></i> Pre-submission</span>
+                        <span><i class="fas fa-user mr-1"></i> Individual</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 h-20 overflow-hidden">
+                        Capture your best moment and post it on Instagram. The entry with the maximum number of likes will secure the prize.
+                    </p>
+                    <div class="flex justify-between items-center border-t border-gray-700 pt-4">
+                        <span class="font-bold text-green-400"><i class="fas fa-trophy mr-1"></i> ₹800</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPq2qQxGHfx0b9EfbIfCZNkeUPnl6-WSiT1WUr0LujNIVtYw/viewform"
+                            class="px-4 py-2 bg-blue-600 hover:bg-black text-white rounded text-sm font-bold uppercase tracking-wider transition">Register</a>
+                    </div>
+                    <h5 class="font-bold text-green-400">Registration fee:₹50</h5>
+                </div>
+            </div>
+
+            <!-- Event 3: Treasure Hunt -->
+            <div
+                class="mech-card group relative p-6 bg-gray-800/80 rounded-lg overflow-hidden border-l-4 border-yellow-600 hover:border-green-500 transition-all duration-300">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-white opacity-5 group-hover:opacity-10 transition-opacity">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-display font-bold text-yellow-500 mb-2 group-hover:text-green-400 transition-colors">
+                        TREASURE HUNT</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4 space-x-4">
+                
+                        <span><i class="fas fa-users mr-1"></i> Team: 4</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 h-20 overflow-hidden">
+                        Follow the clues, solve the riddles, and find the hidden treasure across the campus before time
+                        runs out.
+                    </p>
+                    <div class="flex justify-between items-center border-t border-gray-700 pt-4">
+                        <span class="font-bold text-green-400"><i class="fas fa-trophy mr-1"></i> ₹1,000</span>
+                       
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9T5yRNFcAf4jhN8EUF1GCpvr7hpiGUYOQNENouKD4hf5ZQg/viewform?usp=dialog"
+                            class="px-4 py-2 bg-blue-600 hover:bg-black text-white rounded text-sm font-bold uppercase tracking-wider transition">Register</a>
+                    </div>
+                     <h5 class="font-bold text-green-400">Registration fee:₹150</h5>
+                </div>
+            </div>
+
+            <!-- Event 4: Short Film -->
+            <div
+                class="mech-card group relative p-6 bg-gray-800/80 rounded-lg overflow-hidden border-l-4 border-yellow-600 hover:border-green-500 transition-all duration-300">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-white opacity-5 group-hover:opacity-10 transition-opacity">
+                    <i class="fas fa-film"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-display font-bold text-yellow-500 mb-2 group-hover:text-green-400 transition-colors">
+                        Reel Contest</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4 space-x-4">
+                        <span><i class="far fa-calendar-alt mr-1"></i> Pre-submission</span>
+                        <span><i class="fas fa-users mr-1"></i> No Limit</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 h-20 overflow-hidden">
+                        Capture the moment and share it as an Instagram Reel. The reel with the highest number of likes will secure the prize.
+                    </p>
+                    <div class="flex justify-between items-center border-t border-gray-700 pt-4">
+                        <span class="font-bold text-green-400"><i class="fas fa-trophy mr-1"></i> ₹600</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCPdR0xGacF_pMj0xfNUiVUSNrzUw6elfMJI__vIcJQ0mJAg/viewform?usp=dialog"
+                            class="px-4 py-2 bg-blue-600 hover:bg-black text-white rounded text-sm font-bold uppercase tracking-wider transition">Register</a>
+                    </div>
+                    <h5 class="font-bold text-green-400">Registration fee:₹50</h5>
+                </div>
+            </div>
+
+            <!-- Event 5: Meme Making -->
+            <div
+                class="mech-card group relative p-6 bg-gray-800/80 rounded-lg overflow-hidden border-l-4 border-yellow-600 hover:border-green-500 transition-all duration-300">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-white opacity-5 group-hover:opacity-10 transition-opacity">
+                     <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3
+                        class="text-2xl font-display font-bold text-yellow-500 mb-2 group-hover:text-green-400 transition-colors">
+                        SQUID GAMES</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4 space-x-4">
+                        
+                        <span></i>Solo/Squad</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 h-20 overflow-hidden">
+                        Face off in thrilling games inspired by Squid Game. Outlast the challenges to claim victory
+                    </p>
+                    <div class="flex justify-between items-center border-t border-gray-700 pt-4">
+                        <span class="font-bold text-green-400"><i class="fas fa-trophy mr-1"></i> ₹500</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScL7h-5j3kxfo-uacCb0c9L3clVb8C8kaQfAVysfbdti_1Ztw/viewform?usp=publish-editor"
+                            class="px-4 py-2 bg-blue-600 hover:bg-black text-white rounded text-sm font-bold uppercase tracking-wider transition">Register</a>
+                    </div>
+                    <h5 class="font-bold text-green-400">Registration fee:₹50</h5>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="bg-black py-8 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm">&copy; MECHANO MMXXVI. Developed by Student Committee.</p>
+    </footer>
+</body>
+
+</html>

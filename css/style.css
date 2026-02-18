@@ -1,0 +1,222 @@
+/* Mechan Feast 2026 - Custom Styles */
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* CSS Variables for Theming */
+:root {
+    --primary-color: #4682B4;
+    /* Steel Blue */
+    --secondary-color: #CD7F32;
+    /* Bronze */
+    --accent-color: #FF4500;
+    /* Industrial Orange */
+    --dark-bg: #0f172a;
+    --metallic-silver: #C0C0C0;
+    --text-light: #F8FAFC;
+    --glass-bg: rgba(15, 23, 42, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-light);
+    background-color: var(--dark-bg);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Utilities */
+.text-metallic {
+    background: linear-gradient(to bottom, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-bronze {
+    color: var(--secondary-color);
+}
+
+.bg-glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+}
+
+/* Animations */
+@keyframes rotate-gear {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-gear-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: rotate-gear 10s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+    animation: rotate-gear-reverse 12s linear infinite;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Hidden Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/* Intro Video Overlay */
+#intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-out;
+}
+
+#intro-overlay.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skip-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.skip-btn:hover {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Hero Section Video Background */
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Mechanical Card Styles */
+.mech-card {
+    position: relative;
+    background: rgba(30, 41, 59, 0.8);
+    border-left: 4px solid var(--secondary-color);
+    clip-path: polygon(0 0,
+            100% 0,
+            100% calc(100% - 20px),
+            calc(100% - 20px) 100%,
+            0 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-left-color: var(--primary-color);
+}
+
+/* Navigation Active State */
+.nav-link.active {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Background Image System */
+.home-page-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: #000;
+    /* Fallback */
+}
+
+.internal-pages-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    background-image: url('../page-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(15, 23, 42, 0.85);
+    /* Dark overlay */
+}
